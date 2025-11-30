@@ -1,4 +1,4 @@
-"use client";
+
 
 import Banner from '@/component/home/Banner'
 import { HeroParallaxDemo } from '@/component/others/HeroParallaxDemo'
@@ -27,7 +27,7 @@ const Home = () => {
 
       <Banner />
 
-      <div className="mt-20">
+      <div className="">
         <HeroParallaxDemo />
       </div>
 

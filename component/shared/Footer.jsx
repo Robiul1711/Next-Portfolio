@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-200 dark:border-gray-800 mt-20">
+    <footer className="border-t border-gray-200 dark:border-gray-800 ">
       <div className="section-padding-x py-12">
         {/* Footer content wrapper */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-10">
