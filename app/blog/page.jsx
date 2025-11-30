@@ -2,7 +2,8 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import blog from "@/public/images/blog.jpg";
+import Image from "next/image";
 const blogPosts = [
   {
     title: "Mastering React Hook Form",
@@ -10,7 +11,7 @@ const blogPosts = [
     date: "Jan 12, 2025",
     slug: "react-hook-form-guide",
     tag: "React",
-    thumbnail: "/images/blog/rhf.jpg",
+    thumbnail: blog,
   },
   {
     title: "Best MERN Folder Structure",
@@ -18,7 +19,7 @@ const blogPosts = [
     date: "Jan 5, 2025",
     slug: "mern-best-structure",
     tag: "MERN",
-    thumbnail: "/images/blog/mern.jpg",
+    thumbnail: blog,
   },
   {
     title: "TanStack Query Full Guide",
@@ -26,7 +27,7 @@ const blogPosts = [
     date: "Dec 29, 2024",
     slug: "tanstack-guide",
     tag: "React",
-    thumbnail: "/images/blog/tanstack.jpg",
+    thumbnail: blog,
   },
 ];
 
@@ -56,7 +57,12 @@ export default function BlogPage() {
           >
             {/* Thumbnail */}
             <div className="overflow-hidden">
-              <img
+              {/* <img
+                src={post.thumbnail}
+                alt={post.title}
+                className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500"
+              /> */}
+              <Image
                 src={post.thumbnail}
                 alt={post.title}
                 className="w-full h-52 object-cover group-hover:scale-110 transition-transform duration-500"
