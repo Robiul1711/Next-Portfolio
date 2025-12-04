@@ -159,7 +159,7 @@ const AboutMe = () => {
                   Technical Expertise
                 </h4>
                 <div className="space-y-4">
-                  {skills.map((skill) => (
+                  {skills?.map((skill) => (
                     <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between">
                         <span className="text-gray-700 dark:text-gray-300 font-medium">

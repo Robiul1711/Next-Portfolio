@@ -159,7 +159,7 @@ export default function AboutPage() {
                   className="w-full h-auto object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent" />
                 
                 {/* Floating Tech Icons */}
                 <motion.div
@@ -167,16 +167,16 @@ export default function AboutPage() {
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute -top-6 -right-6 w-32 h-32"
                 >
-                  {skills.map((skill, idx) => (
+                  {skills?.map((skill, idx) => (
                     <div
-                      key={skill.name}
+                      key={idx}
                       className="absolute w-12 h-12 rounded-full bg-gray-900 border border-gray-800 flex items-center justify-center text-xl"
                       style={{
                         left: `${50 + 40 * Math.cos((idx * 2 * Math.PI) / skills.length)}%`,
                         top: `${50 + 40 * Math.sin((idx * 2 * Math.PI) / skills.length)}%`,
                       }}
                     >
-                      <span style={{ color: skill.color }}>{skill.icon}</span>
+                      <span style={{ color: skill?.color }}>{skill?.icon}</span>
                     </div>
                   ))}
                 </motion.div>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                     transition={{ duration: 0.5, delay: idx * 0.1 }}
                     viewport={{ once: true }}
                     whileHover={{ y: -5 }}
-                    className="bg-gradient-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-gray-800 rounded-xl p-4"
+                    className="bg-linear-to-br from-gray-900/80 to-black/80 backdrop-blur-sm border border-gray-800 rounded-xl p-4"
                   >
                     <div className="flex items-center justify-between">
                       <div>
