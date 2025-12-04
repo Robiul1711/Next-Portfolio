@@ -104,7 +104,7 @@ const SkillSection = () => {
           </p>
 
           <div className="space-y-4">
-            {skills.map((skill, index) => (
+            {skills?.map((skill, index) => (
               <motion.div
                 key={skill}
                 initial={{ opacity: 0, y: 15 }}
