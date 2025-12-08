@@ -3,7 +3,6 @@ import "./globals.css";
 import Navbar from "@/component/shared/Navbar";
 import Footer from "@/component/shared/Footer";
 import ScrollProgressBar from "@/component/common/ScrollProgressBar";
-import ChatWidget from "@/component/chat/ChatWidget";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,7 +27,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         <ScrollProgressBar />
-             <ChatWidget />
+          
         <Navbar />
         {children}
         <Footer />
