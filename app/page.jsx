@@ -5,6 +5,7 @@ import LightRays from "@/components/LightRays";
 import React from "react";
 import TimelineSection from "@/component/home/TimelineSection";
 import AboutMe from "@/component/home/AboutMe";
+import ChatWidget from "@/component/chat/ChatWidget";
 
 const Home = () => {
   return (
@@ -25,7 +26,7 @@ const Home = () => {
           className="custom-rays"
         />
       </div>
-
+   <ChatWidget />
       <Banner />
       <AboutMe />
       <SkillSection />
