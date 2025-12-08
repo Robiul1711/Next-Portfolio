@@ -9,6 +9,7 @@ import AboutMe from "@/component/home/AboutMe";
 const Home = () => {
   return (
     <div className="relative w-full min-h-screen">
+ 
       {/* Light Rays Background */}
       <div className="absolute top-0 left-0 w-full h-screen -z-10 pointer-events-none">
         <LightRays
@@ -26,7 +27,7 @@ const Home = () => {
       </div>
 
       <Banner />
-      <AboutMe/>
+      <AboutMe />
       <SkillSection />
       <div className="">
         <HeroParallaxDemo />
